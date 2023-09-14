@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramvir Bhogal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/43caa79035.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="main1.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1><span>Paramvir</span> Bhogal</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="photo.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem ipsum beatae similique minus quia ut numquam
+              accusantium harum voluptatem, ad tempore esse ex doloremque,
+              itaque ducimus, ratione eius ab in consequatur! Ipsa nostrum,
+              accusamus mollitia quibusdam beatae eum culpa, id recusandae
+              voluptatem exercitationem natus. Accusantium exercitationem a est
+              qui, iure quis ut! Ipsa cupiditate voluptatibus tenetur?
+              Laboriosam, fuga blanditiis iusto quisquam, eos ipsa cum alias
+              voluptas voluptates provident molestiae perspiciatis recusandae
+              illo vel aut expedita molestias earum eveniet officiis culpa
+              soluta consequatur! Eveniet, aliquid incidunt temporibus
+              laudantium maxime a architecto nam soluta voluptates dolorum
+              veritatis amet id consequuntur expedita minus.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Websites/Applications</li>
+                <li>
+                  <span>Backend Developer</span><br />Experience in C, C#, and
+                  Python
+                </li>
+                <li>
+                  <span>Game Development</span><br />Experience with Unity game
+                  development in C#
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Current</span><br />High School</li>
+                <li><span>2020-2023</span><br />C# Studies</li>
+                <li><span>2018-2020</span><br />Unity Game Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />High School and CS50</li>
+                <li><span>2023</span><br />Graduated Junior High</li>
+                <li><span>2020</span><br />Graduated Elementry</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+              cum consectetur quas?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Game Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+              cum consectetur quas?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Hardware Technician</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+              cum consectetur quas?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <div>
+              <h2>To Be Added</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+                cum consectetur quas?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+  
+            <div>
+              <h2>To Be Added</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+                cum consectetur quas?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+  
+            <div>
+              <h2>To Be Added</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laudantium quo aut enim obcaecati sapiente ratione animi quibusdam
+                cum consectetur quas?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
