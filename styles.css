@@ -74,43 +74,6 @@ nav ul li a:hover::after {
     color: #FFF6E0;
 }
 
-
-
-@media screen and (max-width: 1100px) {
-    nav ul li a {
-      width: 100%;
-      height: auto;
-      position: relative;
-      font-size: 20px;
-    }
-    .logo {
-        width: 120px;
-    }
-  }
-
-@media screen and (max-width: 930px) {
-    nav ul li a {
-      width: 100%;
-      height: auto;
-      position: relative;
-      font-size: 15px;
-    }
-    .logo {
-        width: 120px;
-    }
-  }
-
-@media screen and (max-width: 800px) {
-    nav ul li a {
-      width: 100%;
-      height: auto;
-      position: relative;
-      font-size: 14px;
-    }
-    .logo {
-        width: 90px;
-    }
-  }
 /*------------------------------aboout-------------------------------*/
 #about {
     padding: 80px 0;
@@ -247,4 +210,59 @@ nav ul li a:hover::after {
 .work div:hover {
     background: rgb(146, 154, 168);
     transform: translateY(-10px);
+}
+/*------------------------------small device-------------------------------*/
+nav .fa-solid {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 100%; 
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background-color: #272829;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
 }
