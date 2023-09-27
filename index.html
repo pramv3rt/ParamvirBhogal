@@ -11,13 +11,13 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="main1.png" class="logo" />
+          <img src="images/main2.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -31,7 +31,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="photo.png" />
+            <img src="images/photo.png" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -172,6 +172,11 @@
         </div>
       </div>
     </div>
+
+
+    <div id="contact">
+      
+    </div>
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -189,5 +194,8 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+    <!-- Import Particles.js and app.js files -->
+      <canvas class="background"></canvas>
+      <script src="\node_modules\particlesjs\dist/particles.min.js"></script>
   </body>
 </html>

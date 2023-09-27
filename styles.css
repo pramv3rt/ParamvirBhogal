@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 * {
     margin:0;
     padding:0;
@@ -8,12 +11,20 @@ body {
     background: #272829;
     color: #fff;
 }
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(photo.png);
+    background-image:url(images/background2.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .container {
     padding: 10px 10%;
@@ -33,9 +44,9 @@ nav ul li {
     margin: 10px 20px;
 }
 nav ul li a {
-    color:#fff;
+    color:#ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
 }
 nav ul li a::after {
@@ -62,6 +73,44 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #FFF6E0;
 }
+
+
+
+@media screen and (max-width: 1100px) {
+    nav ul li a {
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: 20px;
+    }
+    .logo {
+        width: 120px;
+    }
+  }
+
+@media screen and (max-width: 930px) {
+    nav ul li a {
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: 15px;
+    }
+    .logo {
+        width: 120px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    nav ul li a {
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: 14px;
+    }
+    .logo {
+        width: 90px;
+    }
+  }
 /*------------------------------aboout-------------------------------*/
 #about {
     padding: 80px 0;
@@ -159,7 +208,7 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 .services-list div:hover {
-    background: #c3c4c5;
+    background: rgb(146, 154, 168);
     transform: translateY(-10px);
 }
 /*------------------------------portfolio-------------------------------*/
@@ -196,6 +245,6 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 .work div:hover {
-    background: #c3c4c5;
+    background: rgb(146, 154, 168);
     transform: translateY(-10px);
 }
